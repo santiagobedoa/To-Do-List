@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import freecodecampLogo from './images/freecodecamp-logo.png'
+import Todo from './components/Todo'
+import Form from './components/Form'
+import List from './components/List'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='freecodecamp-logo-container'>
+        <img src={freecodecampLogo} className='freecodecamp-logo'></img>
+      </div>
+      <div className='to-do-list'>
+        <h1>To Do</h1>
+        <List />
+      </div>
     </div>
   );
 }
